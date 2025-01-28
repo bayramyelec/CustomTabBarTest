@@ -21,6 +21,10 @@ class CustomTabBar: UIView {
     private lazy var containerView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOffset = CGSize(width: 0, height: 2)
+        view.layer.shadowRadius = 7
+        view.layer.shadowOpacity = 0.3
         view.layer.cornerRadius = 25
         return view
     }()
